@@ -66,7 +66,7 @@ public class CategoriaDAO {
 				}
 				return categorias;
 			}
-		}catch (SQLException e) {
+		} catch (SQLException e) {
 			throw new RuntimeException(e);
 		}
 
