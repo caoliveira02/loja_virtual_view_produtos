@@ -18,10 +18,12 @@ public class ProdutoController {
 		
 	public void deletar(Integer id) {
 		System.out.println("Deletando produto");
+		this.pordutoDAO.deletar(id);
 	}
 
 	public void salvar(Produto produto) {
 		System.out.println("Salvando produto");
+		this.pordutoDAO.salvar(produto);
 	}
 	
 	public List<Produto> listar() {
@@ -38,5 +40,6 @@ public class ProdutoController {
 
 	public void alterar(String nome, String descricao, Integer id) {
 		System.out.println("Alterando produto");
+		this.pordutoDAO.alterar(nome, descricao, id);
 	}
 }
